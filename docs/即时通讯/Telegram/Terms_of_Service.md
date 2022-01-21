@@ -2,12 +2,14 @@
 title: Terms of Service
 ---
 
-```YAML
-url:
-    - https://telegram.org/tos
-    - https://web.archive.org/web/20211225053607/https://telegram.org/tos
-收录时间: 2022-01-21
-```
+!!! summary "信息"
+
+    ```YAML
+    url:
+        - https://telegram.org/tos
+        - https://web.archive.org/web/20211225053607/https://telegram.org/tos
+    收录时间: 2022-01-21
+    ```
 
 By signing up for Telegram, you accept our Privacy Policy and agree not to:
 

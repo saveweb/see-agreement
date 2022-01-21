@@ -1,4 +1,4 @@
-article [href^="http"]:not([href*="本站域名"])::after {
+article [href^="http"]:not([href*="saveweb.github.io"])::after {
     content: '(external link)';
     display: inline-block;
     width: 1em;

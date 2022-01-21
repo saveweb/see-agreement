@@ -2,12 +2,14 @@
 title: Telegram Privacy Policy
 ---
 
-```YAML
-url:
-    - https://telegram.org/privacy
-    - https://web.archive.org/web/20220104072752/https://telegram.org/privacy
-收录时间: 2022-01-21
-```
+!!! summary "信息"
+
+    ```YAML
+    url:
+        - https://telegram.org/privacy
+        - https://web.archive.org/web/20220104072752/https://telegram.org/privacy
+    收录时间: 2022-01-21
+    ```
 
 ### 1. Introduction
 
