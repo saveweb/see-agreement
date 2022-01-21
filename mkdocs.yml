@@ -61,7 +61,8 @@ markdown_extensions:
     - pymdownx.highlight # 代码块相关
     - pymdownx.inlinehilite # 代码块相关
     - pymdownx.superfences # 代码块相关
-    - pymdownx.tabbed # 标签页 https://squidfunk.github.io/mkdocs-material/reference/content-tabs/ # C++/python 代码例子切换
+    - pymdownx.tabbed: # 标签页 https://squidfunk.github.io/mkdocs-material/reference/content-tabs/ # C++/python 代码例子切换
+        alternate_style: true 
     - pymdownx.snippets
     - pymdownx.magiclink
     - pymdownx.mark
@@ -69,7 +70,7 @@ markdown_extensions:
     - pymdownx.keys # 支持 快捷键渲染
 
 plugins:
-    - search
+    # - search
     - abs-to-rel # 绝对路径转相对路径 https://pypi.org/project/mkdocs-abs-rel-plugin/
     # - pdf-export              # 导出为 PDF 格式，不过对于此 Wiki 来说，耗时过多。
     # - roamlinks               # 这是自动将链接转化为易于 mkdocs 的插件
