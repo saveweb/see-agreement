@@ -1,4 +1,7 @@
-# Welcome to MkDocs
+---
+title: 主页
+date: 2022-01-21 14:43:41
+---
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
