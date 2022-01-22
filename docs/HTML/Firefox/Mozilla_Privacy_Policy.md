@@ -12,7 +12,9 @@ title: Mozilla Privacy Policy
     收录时间: 2022-01-21
     ```
 
-## What do we mean by "personal information?"
+## 正文
+
+### What do we mean by "personal information?"
 
 For us, "personal information" means information which either directly identifies you (like your name, email address, or billing information) or can be reasonably linked or combined to identify you (like an account identification number or IP address). We’ll always tell you what personal information we’re collecting from you. See each product’s Privacy Notice for specific details.
 
@@ -20,7 +22,7 @@ Any information that falls outside of this is "non-personal information."
 
 If we store your personal information with information that is non-personal, we will consider the combination as personal information. If we remove all personal information from a set of data then the remaining is non-personal information.
 
-## How do we learn information about you?
+### How do we learn information about you?
 
 We learn information about you when:
 
@@ -35,7 +37,7 @@ When you give us information, we will use it in the ways for which you've given 
 
 For users in the EU, EEA, Switzerland, and California: see [here](https://support.mozilla.org/kb/information-eu-eea-and-swiss-users) for more information.
 
-## When do we share your information with others?
+### When do we share your information with others?
 
 + When we have asked and received your permission to share it.
 + For processing or providing products and services to you, but only if those entities receiving your information are contractually obligated to handle the data in ways that are approved by Mozilla.
@@ -44,17 +46,17 @@ For users in the EU, EEA, Switzerland, and California: see [here](https://suppor
 + When we believe it is necessary to prevent harm to you or someone else. We will only share your information in this way if we have a good faith belief that it is reasonably necessary to protect the rights, property or safety of you, our other users, Mozilla or the public.
 + If our organizational structure or status changes (if we undergo a restructuring, are acquired, or go bankrupt) we may pass your information to a successor or affiliate.
 
-## How do we store and protect your personal information?
+### How do we store and protect your personal information?
 
 We are committed to protecting your personal information once we have it. We implement physical, business and technical security measures. Despite our efforts, if we learn of a security breach, we'll notify you so that you can take appropriate protective steps.
 
 We also don't want your personal information for any longer than we need it, so we only keep it long enough to do what we collected it for. Once we don't need it, we take steps to destroy it unless we are required by law to keep it longer.
 
-## What if we change this privacy policy or any of our privacy notices?
+### What if we change this privacy policy or any of our privacy notices?
 
 We may need to change this policy and our notices. The updates will be posted online. If the changes are substantive, we will announce the update through Mozilla's usual channels for such announcements such as blog posts and forums. Your continued use of the product or service after the effective date of such changes constitutes your acceptance of such changes. To make your review more convenient, we will post an effective date at the top of the page.
 
-### Contact Mozilla
+#### Contact Mozilla
 
 If you want to make a correction to your information, or you have any questions about our privacy policies, please get in touch with:
 

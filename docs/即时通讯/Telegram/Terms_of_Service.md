@@ -11,6 +11,8 @@ title: Terms of Service
     收录时间: 2022-01-21
     ```
 
+## 正文
+
 By signing up for Telegram, you accept our Privacy Policy and agree not to:
 
 + Use our service to send spam or scam users.

@@ -12,13 +12,15 @@ title: Firefox Privacy Notice
     收录时间: 2022-01-21
     ```
 
-## At Mozilla, we believe that privacy is fundamental to a healthy internet.
+## 正文
+
+### At Mozilla, we believe that privacy is fundamental to a healthy internet.
 
 That’s why we build Firefox, and all our products, to give you greater control over the information you share online and the information you share with us. We strive to collect only what we need to improve Firefox for everyone.
 
 In this Privacy Notice, we explain what data Firefox shares and point you to settings to share even less. We also adhere to the practices outlined in the Mozilla [privacy policy](https://www.mozilla.org/privacy/) for how we receive, handle and share information we collect from Firefox.
 
-## Firefox by default shares data to:
+### Firefox by default shares data to:
 
 + **Interaction data**: Firefox sends data about your interactions with Firefox to us (such as number of open tabs and windows; number of webpages visited; number and type of installed Firefox Add-ons; and session length) and Firefox features offered by Mozilla or our partners (such as interaction with Firefox search features and search partner referrals).
 + **Technical data**: Firefox sends data about your Firefox version and language; device operating system and hardware configuration; memory, basic information about crashes and errors; outcome of automated processes like updates, safebrowsing, and activation to us. When Firefox sends data to us, your IP address is temporarily collected as part of our server logs.
@@ -67,7 +69,7 @@ Read the full documentation [here](https://firefox-source-docs.mozilla.org/toolk
     _On Desktop_: Firefox by default sends Mozilla HTTP data that may be included with Firefox’s installer. This enables us to determine the website domain or advertising campaign (if any) that referred you to our download page. Read the [documentation](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/environment.html#attribution) or [opt-out](https://support.mozilla.org/kb/desktop-privacy) before installation.
     _On Android_: Firefox by default sends mobile campaign data to Adjust, our analytics vendor, which has its own [privacy policy](https://www.adjust.com/terms/privacy-policy/). Mobile campaign data includes a Google advertising ID, IP address, timestamp, country, language/locale, operating system, and app version. Read the [documentation](https://dictionary.telemetry.mozilla.org/apps/fenix?itemType=metrics&page=1&search=adjust).
 
-## If you use these features, Firefox will share data to provide you functionality and help us improve our products and services:
+### If you use these features, Firefox will share data to provide you functionality and help us improve our products and services:
 
 Mozilla is developing a new feature that helps deliver you better information with less effort. It’s called Firefox Suggest and an early version of it is currently available to users in the United States. By default, Firefox Suggest shows you recommended and sponsored content based on local data stored on your own computer, such as websites from your browsing history, bookmarks and open tabs.
 
@@ -113,7 +115,7 @@ You can install Add-ons from addons.mozilla.org (“AMO”) or from the Firefox 
 + **Interaction data**: We receive aggregate data about visits to the AMO website and the Add-ons Manager in Firefox, as well as interactions with content on those pages. Read about data practices on [Mozilla websites](https://www.mozilla.org/privacy/websites/).
 + **Technical data for updates**: Firefox periodically connects with Mozilla to install updates to Add-ons. Your installed Add-ons, Firefox version, language, and device operating system are used to apply the correct updates.
 
-### Footnote
+#### Footnote
 
 This privacy notice is for the most recent general release version of Firefox distributed by Mozilla. If you obtain Firefox elsewhere, or are running an older version, your copy of Firefox may contain different privacy characteristics.
 
