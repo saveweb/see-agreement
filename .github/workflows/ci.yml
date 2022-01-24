@@ -18,5 +18,6 @@ jobs:
       - run: pip install mkdocs-abs-rel-plugin
       - run: pip install mkdocs-roamlinks-plugin
       - run: pip install mkdocs-redirects
+      - run: pip install mkdocs-static-i18n # multiple language
       - run: pip install pymdown-extensions
       - run: mkdocs gh-deploy --force
