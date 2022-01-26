@@ -1,24 +1,11 @@
 ---
 title: Terms of Service
+description:
+published: true
+date: 2022-01-26T19:55:36.610Z
+tags:
+editor: markdown
+dateCreated: 2022-01-26T19:55:36.610Z
 ---
 
-!!! summary "信息"
-
-    ```YAML
-    url:
-        - https://telegram.org/tos
-        - https://web.archive.org/web/20211225053607/https://telegram.org/tos
-    收录时间: 2022-01-21
-    ```
-
-## 正文
-
-By signing up for Telegram, you accept our Privacy Policy and agree not to:
-
-+ Use our service to send spam or scam users.
-+ Promote violence on publicly viewable Telegram channels, bots, etc.
-+ Post illegal pornographic content on publicly viewable Telegram channels, bots, etc.
-
-We reserve the right to update these Terms of Service later.
-
-> Citizens of EU countries and the United Kingdom must be at least 16 years old to sign up.
+本文暂无中文，请切换到英文版。
