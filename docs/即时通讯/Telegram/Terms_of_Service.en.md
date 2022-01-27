@@ -2,7 +2,7 @@
 title: Terms of Service
 ---
 
-!!! summary "信息"
+!!! summary "元数据"
 
     ```YAML
     url:

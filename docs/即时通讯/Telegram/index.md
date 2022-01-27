@@ -2,7 +2,7 @@
 title: Telegram
 ---
 
-!!! summary "信息"
+!!! summary "元数据"
 
     ```YAML
     原作者: 杜洛夫兄弟（尼古拉·杜洛夫、保罗·杜洛夫）
