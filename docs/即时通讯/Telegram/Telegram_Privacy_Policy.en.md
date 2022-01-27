@@ -2,7 +2,7 @@
 title: Telegram Privacy Policy
 ---
 
-!!! summary "信息"
+!!! summary "元数据"
 
     ```YAML
     url:
