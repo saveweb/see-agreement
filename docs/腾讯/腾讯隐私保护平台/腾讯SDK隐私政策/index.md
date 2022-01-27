@@ -1,5 +1,6 @@
 ---
 title: 腾讯SDK隐私政策
+url: https://privacy.qq.com/policy/sdk-privacypolicy
 description:
 published: true
 date: 2022-01-27T13:59:10.334+08:00

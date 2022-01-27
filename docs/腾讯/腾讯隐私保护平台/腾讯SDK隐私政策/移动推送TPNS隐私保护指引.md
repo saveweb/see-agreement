@@ -1,5 +1,6 @@
 ---
 title: 移动推送TPNS隐私保护指引
+url: https://privacy.qq.com/document/preview/8565a4a2d26e480187ed86b0cc81d727
 description:
 published: true
 date: 2022-01-27T14:00:13.021+08:00

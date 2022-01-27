@@ -1,5 +1,6 @@
 ---
 title: Cookie政策
+url: https://privacy.qq.com/policy/cookie-privacypolicy
 description:
 published: true
 date: 2022-01-27T13:54:14.899+08:00
