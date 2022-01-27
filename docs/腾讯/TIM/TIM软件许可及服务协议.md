@@ -1,7 +1,7 @@
 ---
 title: TIM软件许可及服务协议
 url: https://ti.qq.com/tim/serverinfo.html
-clipped_at: 2022-01-23 13:43:36
+date: 2022-01-23 13:43:36
 category: default
 tags: 
  - ti.qq.com
