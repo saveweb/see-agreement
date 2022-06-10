@@ -1,0 +1,1160 @@
+.alicare {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  user-select: none;
+}
+.alicare * {
+  line-height: initial;
+  box-sizing: initial;
+  font-family: "PingFang SC", "microsoft yahei", tahoma, arial, "Hiragino Sans GB", sans-serif;
+}
+.alicare .float-ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.alicare .float-ul .list-bird {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 127px;
+  background-image: url('');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  cursor: pointer;
+}
+.alicare .float-ul .list-bird .bird-eye {
+  position: absolute;
+  top: 28px;
+  right: 12px;
+}
+.alicare .float-ul .list-bird span {
+  margin-top: 50px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 16px;
+  letter-spacing: 2px;
+  writing-mode: vertical-lr;
+}
+.alicare .float-ul .list-bird .border {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: calc(100% + 20px);
+  width: calc(100% + 20px);
+  background-image: url('');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out 0s;
+}
+.alicare .float-ul .list-bird .border.show {
+  opacity: 1;
+  visibility: visible;
+}
+.alicare .float-ul .coverage {
+  position: relative;
+  width: 44px;
+  margin-top: 12px;
+  border-radius: 22px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+.alicare .float-ul .coverage span {
+  margin: 18px 0px 14px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 16px;
+  letter-spacing: 2px;
+  writing-mode: vertical-lr;
+}
+.alicare .float-ul .coverage.visible {
+  display: block;
+}
+.alicare .float-ul .list-item {
+  width: 44px;
+  height: 44px;
+  margin-top: 12px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 0px 8px 0px;
+  border-radius: 29px;
+  cursor: pointer;
+}
+.alicare .float-ul .list-item .iconfont {
+  display: inline-block;
+  margin: 13px 12px;
+  font-size: 18px;
+  color: rgb(114, 114, 114);
+}
+.alicare .float-ul .list-item .iconfont.icon-zhiding {
+  font-size: 13px;
+  padding: 4px;
+}
+.alicare .float-ul .list-item .iconfont.icon-a-manyidupingfen_huaban1 {
+  margin: 12px 11px 14px 13px;
+}
+.alicare .float-ul .list-item.survey {
+  display: none;
+}
+.alicare .float-ul .list-item.survey.visible {
+  display: block;
+}
+.alicare .float-ul .list-item.scroll-top {
+  visibility: visible;
+  opacity: 1;
+  overflow: hidden;
+  border-radius: 100%;
+  transition: height 0.3s ease-in-out 0s, margin 0.38s cubic-bezier(0.42, 0, 0, 2) 0s;
+}
+.alicare .float-ul .list-item.scroll-top.alicare-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0px;
+  margin-top: 0px !important;
+  transition: all 0.3s ease-in-out 0s;
+}
+.alicare .float-ul .list-item:hover .iconfont {
+  color: rgb(33, 150, 243);
+}
+.alicare .float-ul .list-item:not(:nth-child(2)) {
+  margin-top: 16px;
+}
+.alicare .tooltip {
+  display: none;
+  position: absolute;
+  right: 64px;
+  bottom: 0px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 3px 7px 0px, rgba(0, 0, 0, 0.12) 0px 0px 1px 0px;
+  border-radius: 4px;
+  z-index: 3;
+}
+.alicare .tooltip p {
+  white-space: nowrap;
+  margin: 10px 12px;
+  font-size: 12px;
+  color: rgb(37, 41, 52);
+  line-height: 20px;
+}
+.alicare .trigger-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 72px;
+  top: 30px;
+  width: 276px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 3px 7px 0px, rgba(0, 0, 0, 0.12) 0px 0px 1px 0px;
+  border-radius: 4px;
+  z-index: 1;
+  transition: all 0.3s ease-in-out 0s;
+}
+.alicare .trigger-tooltip.show {
+  opacity: 1;
+  visibility: visible;
+}
+.alicare .trigger-tooltip .close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: inline-block;
+  margin: 6px;
+  color: rgb(47, 50, 61);
+  cursor: pointer;
+  line-height: 10px;
+}
+.alicare .trigger-tooltip .close i {
+  font-size: 10px;
+}
+.alicare .trigger-tooltip .info, .alicare .trigger-tooltip .link {
+  display: block;
+  white-space: normal;
+  margin: 20px 40px 20px 20px;
+  font-size: 12px;
+  color: rgb(37, 41, 52);
+  line-height: 20px;
+}
+.alicare .trigger-tooltip .link {
+  margin-top: 0px;
+  color: rgb(33, 150, 243);
+  text-decoration: none;
+  cursor: pointer;
+}
+.alicare .trigger-tooltip .link:hover {
+  color: rgb(33, 150, 243);
+}
+.alicare .trigger-tooltip .icon-tiaozhuan {
+  font-size: 12px;
+  margin-left: 4px;
+}
+.alicare .trigger-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: -16px;
+  height: 0px;
+  width: 0px;
+  display: block;
+  border-color: transparent transparent transparent white;
+  border-style: solid;
+  border-width: 8px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.12) 3px 3px 2px);
+}
+.alicare .contact-box {
+  display: none;
+  position: absolute;
+  right: 64px;
+  bottom: 0px;
+  width: 500px;
+  height: 610px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 30px 0px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 2;
+}
+.alicare .contact-box.active {
+  display: block;
+}
+.alicare .contact-box.active ~ .trigger-tooltip {
+  display: none !important;
+}
+.alicare .contact-box .background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-image: url('');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.alicare .contact-box .controller {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 52px;
+  z-index: 1;
+}
+.alicare .contact-box .controller .left {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.alicare .contact-box .controller .left .fanhui {
+  display: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  line-height: 20px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.alicare .contact-box .controller .left .fanhui i {
+  font-size: 20px;
+}
+.alicare .contact-box .controller .right {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.alicare .contact-box .controller .right .liuzi {
+  display: inline-block;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  line-height: 20px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.alicare .contact-box .controller .right .liuzi i {
+  margin-right: 4px;
+  font-size: 12px;
+}
+.alicare .contact-box .controller .right .minimize {
+  display: none;
+  margin-left: 16px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  line-height: 20px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.alicare .contact-box .controller .right .minimize i {
+  font-size: 20px;
+}
+.alicare .contact-box .controller .right .close {
+  display: inline-block;
+  margin-left: 16px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  line-height: 20px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.alicare .contact-box .controller .right .close i {
+  font-size: 20px;
+}
+.alicare .contact-box .header {
+  margin-left: 120px;
+  margin-top: 46px;
+  margin-bottom: 6px;
+}
+.alicare .contact-box .header .main {
+  margin: 0px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  line-height: 24px;
+  vertical-align: bottom;
+}
+.alicare .contact-box .header .main .hi {
+  display: inline-block;
+  margin-right: 4px;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  line-height: 26px;
+  vertical-align: bottom;
+}
+.alicare .contact-box .header .sub {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+.alicare .contact-box .box-shadow, .alicare .contact-box .footer-shadow {
+  position: relative;
+  width: calc(100% - 32px);
+  height: 198px;
+  margin: 16px;
+  background: rgb(180, 215, 243) none repeat scroll 0% 0%;
+  box-shadow: rgba(67, 83, 110, 0.16) 0px 0px 8px 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+.alicare .contact-box .box-shadow .box, .alicare .contact-box .footer-shadow .box, .alicare .contact-box .box-shadow .footer, .alicare .contact-box .footer-shadow .footer {
+  position: absolute;
+  top: 2px;
+  width: 100%;
+  height: 198px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  box-shadow: rgba(67, 83, 110, 0.16) 0px 0px 8px 0px;
+  border-radius: 4px;
+}
+.alicare .contact-box .footer-shadow {
+  height: 264px;
+}
+.alicare .contact-box .footer-shadow .footer {
+  height: 264px;
+}
+.alicare .contact-box .box .scroll-layer {
+  height: 60px;
+  overflow: hidden;
+}
+.alicare .contact-box .box .scroll {
+  width: calc(100% - 32px);
+  margin: 0px 16px;
+  padding-bottom: 40px;
+  overflow-x: scroll;
+}
+.alicare .contact-box .box .scroll .alicare-list {
+  position: relative;
+  margin: 16px 0px;
+  padding: 0px;
+  list-style: none;
+  white-space: nowrap;
+}
+.alicare .contact-box .box .scroll .alicare-list .slide {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 10px;
+  height: 2px;
+  background-color: rgb(33, 150, 243);
+  transition: all 0.1s ease 0s;
+}
+.alicare .contact-box .box .scroll .alicare-list .list-item {
+  margin: 0px 12px 2px;
+  display: inline-block;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  letter-spacing: 0px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.alicare .contact-box .box .scroll .alicare-list .list-item.active {
+  font-weight: 500;
+}
+.alicare .contact-box .box .scroll .alicare-list .list-item:nth-child(2) {
+  margin-left: 1px;
+}
+.alicare .contact-box .box .scroll .alicare-list .list-item:last-child {
+  margin-right: 1px;
+}
+.alicare .contact-box .box .scroll .alicare-list .list-item:hover {
+  font-weight: 500;
+}
+.alicare .contact-box .box .scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.alicare .contact-box .box .button {
+  margin: -6px 9px 0px;
+}
+.alicare .contact-box .box .button .button-item {
+  display: inline-block;
+  width: 118px;
+  height: 31px;
+  margin: 8px 7px;
+  padding: 9px 8px 8px;
+  border: 1px solid rgb(225, 228, 232);
+  border-radius: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: all 0.1s ease 0s;
+  vertical-align: middle;
+}
+.alicare .contact-box .box .button .button-item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+  line-height: 16px;
+  text-align: center;
+}
+.alicare .contact-box .box .button .button-item span b {
+  display: none;
+}
+.alicare .contact-box .box .button .button-item * {
+  white-space: pre-line;
+}
+.alicare .contact-box .box .button .button-item:hover {
+  border: 1px solid rgb(33, 150, 243);
+}
+.alicare .contact-box .box .button .button-item:hover span {
+  color: rgb(33, 150, 243);
+}
+.alicare .contact-box .footer .alicare-list {
+  margin: 10px 0px;
+  padding: 0px;
+  list-style: none;
+}
+.alicare .contact-box .footer .alicare-list .list-item {
+  display: inline-block;
+  width: calc(100% - 32px);
+  padding: 10px 16px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .left {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  color: rgb(136, 136, 136);
+  background: rgb(240, 242, 247) none repeat scroll 0% 0%;
+}
+.alicare .contact-box .footer .alicare-list .list-item .left .icon-zhinengkefu {
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px 9px 9px 7px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .left .icon-kefudianhua {
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px 9px 9px 7px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .left .icon-fanganzixun {
+  display: inline-block;
+  font-size: 14px;
+  margin: 8px 7px 8px 9px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .left .icon-kaifazheshequ {
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 8px 6px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .left .icon-zhangshangyoumeng {
+  display: inline-block;
+  font-size: 14px;
+  margin: 9px 7px 7px 9px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right {
+  width: calc(100% - 44px);
+  display: inline-block;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .main {
+  margin: 0px;
+  font-size: 12px;
+  color: rgb(67, 67, 67);
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .main span:first-child {
+  font-weight: 500;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .main .right-now {
+  float: right;
+  line-height: 18px;
+  vertical-align: top;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .main .right-now .iconfont {
+  font-size: 12px;
+  color: rgb(202, 206, 215);
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .main .i-expand {
+  float: right;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .main .i-expand .iconfont {
+  font-size: 12px;
+  color: rgb(202, 206, 215);
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .main .i-expand .icon-zhankaizhuangtai {
+  display: none;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .sub {
+  margin: 0px;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .right .sub .tel {
+  color: rgb(67, 67, 67);
+}
+.alicare .contact-box .footer .alicare-list .list-item .expand {
+  display: none;
+  margin-top: 16px;
+  text-align: center;
+  transition: all 0.2s ease 0s;
+}
+.alicare .contact-box .footer .alicare-list .list-item .expand .expand-item {
+  display: inline-block;
+  margin: 0px 16px;
+  width: 134px;
+  text-align: center;
+}
+.alicare .contact-box .footer .alicare-list .list-item .expand .expand-item img {
+  display: inline-block;
+  margin: 0px 24px;
+  width: 86px;
+  height: 86px;
+}
+.alicare .contact-box .footer .alicare-list .list-item .expand .expand-item span {
+  display: inline-block;
+  font-size: 12px;
+  color: rgb(141, 141, 141);
+  letter-spacing: 0px;
+}
+.alicare .contact-box .footer .alicare-list .list-item.kefu, .alicare .contact-box .footer .alicare-list .list-item.dev, .alicare .contact-box .footer .alicare-list .list-item.mini {
+  cursor: pointer;
+}
+.alicare .contact-box .footer .alicare-list .list-item.kefu:hover .right .main, .alicare .contact-box .footer .alicare-list .list-item.dev:hover .right .main, .alicare .contact-box .footer .alicare-list .list-item.mini:hover .right .main, .alicare .contact-box .footer .alicare-list .list-item.kefu.active .right .main, .alicare .contact-box .footer .alicare-list .list-item.dev.active .right .main, .alicare .contact-box .footer .alicare-list .list-item.mini.active .right .main {
+  color: rgb(33, 150, 243);
+}
+.alicare .contact-box .footer .alicare-list .list-item.kefu:hover .right .main .i-expand .iconfont, .alicare .contact-box .footer .alicare-list .list-item.dev:hover .right .main .i-expand .iconfont, .alicare .contact-box .footer .alicare-list .list-item.mini:hover .right .main .i-expand .iconfont, .alicare .contact-box .footer .alicare-list .list-item.kefu.active .right .main .i-expand .iconfont, .alicare .contact-box .footer .alicare-list .list-item.dev.active .right .main .i-expand .iconfont, .alicare .contact-box .footer .alicare-list .list-item.mini.active .right .main .i-expand .iconfont {
+  color: rgb(33, 150, 243);
+}
+.alicare .contact-box .footer .alicare-list .list-item.mini.active .right .main .i-expand .icon-shouqizhuangtai {
+  display: none;
+}
+.alicare .contact-box .footer .alicare-list .list-item.mini.active .right .main .i-expand .icon-zhankaizhuangtai {
+  display: block;
+}
+.alicare .contact-box .footer .alicare-list .list-item.mini {
+  position: relative;
+}
+.alicare .contact-box .footer .alicare-list .list-item.mini.active {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+}
+.alicare .contact-box .footer .alicare-list .list-item.mini.active .expand {
+  display: block;
+}
+.alicare .contact-box .mi {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.alicare .contact-box .mi .mi-header {
+  width: 100%;
+  height: 52px;
+  background: rgb(33, 150, 243) none repeat scroll 0% 0%;
+}
+.alicare .contact-box .mi .mi-header .mi-title {
+  margin: 0px;
+  text-align: center;
+  line-height: 52px;
+  color: white;
+  font-size: 16px;
+}
+.alicare .contact-box .mi iframe {
+  display: none;
+  width: 100%;
+  height: calc(100% - 52px);
+  border: 0px none;
+  background-color: white;
+}
+.alicare .contact-box .mi .addition {
+  display: none;
+  width: 100%;
+  height: calc(100% - 52px);
+  background: rgb(246, 246, 246) none repeat scroll 0% 0%;
+  text-align: center;
+  line-height: 100%;
+}
+.alicare .contact-box .mi .addition img {
+  display: inline-block;
+  margin-top: calc(50% - 96px);
+  width: 110px;
+  height: 110px;
+}
+.alicare .contact-box .mi .addition p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 22px;
+}
+.alicare .contact-box.addition-open {
+  width: 600px;
+  height: 650px;
+}
+.alicare .contact-box.iframe-open {
+  width: 600px;
+  height: 650px;
+}
+.alicare .contact-box.iframe-open .controller .left .fanhui {
+  display: inline-block;
+}
+.alicare .contact-box.iframe-open .controller .right .liuzi {
+  display: none;
+}
+.alicare .contact-box.iframe-open .controller .right .minimize {
+  display: inline-block;
+}
+.alicare .contact-box.iframe-open .mi {
+  display: block;
+}
+.alicare .contact-box.iframe-open .mi iframe {
+  display: block;
+}
+.alicare .contact-box.addition-open .controller .left .fanhui {
+  display: inline-block;
+}
+.alicare .contact-box.addition-open .controller .right .liuzi {
+  display: none;
+}
+.alicare .contact-box.addition-open .controller .right .minimize {
+  display: inline-block;
+}
+.alicare .contact-box.addition-open .mi {
+  display: block;
+}
+.alicare .contact-box.addition-open .mi .addition {
+  display: block;
+}
+.alicare .survey-box {
+  visibility: hidden;
+  opacity: 0;
+  width: 0px;
+  position: absolute;
+  right: 64px;
+  bottom: 0px;
+  box-shadow: rgba(151, 161, 175, 0.37) 0px 2px 10px 0px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.5s cubic-bezier(0, 1, 1, 1) 0s;
+}
+.alicare .survey-box .survey-box-inner {
+  width: 436px;
+  padding: 32px;
+}
+.alicare .survey-box .survey-box-inner .survey-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(45, 49, 68);
+  letter-spacing: 0px;
+  line-height: 24px;
+}
+.alicare .survey-box .survey-box-inner .survey-vote {
+  display: flex;
+  justify-content: space-between;
+}
+.alicare .survey-box .survey-box-inner .survey-vote .survey-vote-item {
+  position: relative;
+  height: 84px;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+.alicare .survey-box .survey-box-inner .survey-vote .survey-vote-item img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 44px;
+  height: 54px;
+  transition: all 0.3s ease 0s;
+}
+.alicare .survey-box .survey-box-inner .survey-vote .survey-vote-item span {
+  display: block;
+  margin-top: 64px;
+  font-size: 12px;
+  color: rgb(107, 121, 142);
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  height: 0px;
+  margin-top: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out 0.5s;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgb(107, 121, 142);
+  letter-spacing: 0px;
+  line-height: 22px;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-textarea {
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  width: calc(100% - 18px);
+  height: 80px;
+  border: 1px solid rgb(225, 228, 232);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px;
+  color: rgb(45, 49, 68);
+  letter-spacing: 0px;
+  line-height: 20px;
+  resize: none;
+  outline: currentcolor none medium;
+  transition: all 0.3s ease 0s;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-textarea:active, .alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-textarea:focus {
+  border: 1px solid rgb(78, 177, 255);
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer .float-left {
+  display: inline-block;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer .float-right {
+  float: right;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer a {
+  font-size: 12px;
+  line-height: 30px;
+  color: rgb(33, 150, 243);
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer a:hover {
+  color: rgb(78, 177, 255);
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer .survey-button {
+  margin-left: 10px;
+  padding: 4px 16px;
+  border: 1px solid rgb(33, 150, 243);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  font-size: 12px;
+  color: rgb(33, 150, 243);
+  letter-spacing: 0px;
+  line-height: 20px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer .survey-button:hover {
+  border: 1px solid rgb(78, 177, 255);
+  color: rgb(78, 177, 255);
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer .survey-button.survey-button-primary {
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
+}
+.alicare .survey-box .survey-box-inner .survey-detail-box .survey-detail-footer .survey-button.survey-button-primary:hover {
+  background-color: rgb(78, 177, 255);
+  color: rgb(255, 255, 255);
+}
+.alicare .survey-box .survey-box-inner .survey-complete-image {
+  opacity: 0;
+  visibility: hidden;
+  height: 0px;
+  margin-top: 0px;
+  text-align: center;
+  width: 100%;
+  transition: opacity 0.5s ease 0s;
+}
+.alicare .survey-box .survey-box-inner .survey-complete-image img {
+  width: 88px;
+}
+.alicare .survey-box .survey-box-inner .survey-complete-image span {
+  display: block;
+  margin-top: 20px;
+  font-size: 16px;
+  color: rgb(45, 49, 68);
+  letter-spacing: 0px;
+  text-align: center;
+  line-height: 24px;
+}
+.alicare .survey-box .survey-box-inner .survey-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 16px;
+  color: rgb(151, 161, 175);
+  cursor: pointer;
+}
+.alicare .survey-box.survey-detail .survey-vote .survey-vote-item .survey-img-normal, .alicare .survey-box.survey-vote-hover .survey-vote .survey-vote-item .survey-img-normal {
+  opacity: 0;
+  visibility: hidden;
+}
+.alicare .survey-box.survey-detail .survey-vote .survey-vote-item.survey-selected .survey-img-normal, .alicare .survey-box.survey-vote-hover .survey-vote .survey-vote-item.survey-selected .survey-img-normal, .alicare .survey-box.survey-detail .survey-vote .survey-vote-item.survey-hover .survey-img-normal, .alicare .survey-box.survey-vote-hover .survey-vote .survey-vote-item.survey-hover .survey-img-normal {
+  opacity: 1;
+  visibility: visible;
+}
+.alicare .survey-box.survey-detail.survey-vote-hover .survey-vote .survey-vote-item .survey-img-normal {
+  display: none;
+}
+.alicare .survey-box.survey-detail.survey-vote-hover .survey-vote .survey-vote-item.survey-selected .survey-img-normal {
+  display: inline-block;
+}
+.alicare .survey-box.survey-detail .survey-detail-box {
+  visibility: visible;
+  opacity: 1;
+  height: 146px;
+  margin-top: 24px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.alicare .survey-box.survey-complete .survey-box-inner .survey-title, .alicare .survey-box.survey-complete .survey-box-inner .survey-vote, .alicare .survey-box.survey-complete .survey-box-inner .survey-detail-box {
+  display: none;
+}
+.alicare .survey-box.survey-complete .survey-box-inner .survey-complete-image {
+  opacity: 1;
+  visibility: visible;
+  height: 236px;
+  margin-top: 66px;
+}
+.alicare .survey-box.survey-show {
+  visibility: visible;
+  opacity: 1;
+  width: 500px;
+}
+.alicare .survey-box.survey-show ~ .trigger-tooltip {
+  display: none !important;
+}
+.alicare.mobile .float-ul .list-bird {
+  width: 44px;
+  height: 66px;
+  background-image: url('');
+}
+.alicare.mobile .float-ul .list-item:not(:nth-child(2)) {
+  margin-top: 20px;
+}
+.alicare.mobile .contact-box {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 100%;
+}
+.alicare.mobile .contact-box .scroll::-webkit-scrollbar {
+  height: 0px !important;
+}
+.alicare.mobile .contact-box .background {
+  background-image: url('');
+}
+.alicare.mobile .contact-box .header {
+  margin-top: 72px;
+  margin-left: 100px;
+}
+.alicare.mobile .contact-box .header .main .hi, .alicare.mobile .contact-box .header .main .o {
+  display: block;
+  font-size: 26px;
+  line-height: 40px;
+}
+.alicare.mobile .contact-box .header .sub {
+  margin-top: 4px;
+}
+.alicare.mobile .contact-box .footer-shadow {
+  height: 8px;
+}
+.alicare.mobile .contact-box .footer-shadow .footer {
+  height: auto;
+  max-height: calc(-216px + 100vh);
+  overflow: scroll;
+  overscroll-behavior: contain;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .right .main {
+  color: rgb(33, 150, 243);
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .right .main .i-expand .iconfont {
+  color: rgb(33, 150, 243);
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .right .main .i-expand .icon-shouqizhuangtai {
+  display: none;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .right .main .i-expand .icon-zhankaizhuangtai {
+  display: block;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand {
+  display: block;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  background: transparent none repeat scroll 0% 0%;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow .box {
+  position: relative;
+  top: auto;
+  width: 100%;
+  height: auto;
+  background: transparent none repeat scroll 0% 0%;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow .box .scroll-layer {
+  height: 28px;
+  overflow: hidden;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow .box .scroll {
+  margin: 0px 6px;
+  width: calc(100% - 12px);
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow .box .scroll .alicare-list {
+  margin: 0px;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow .box .scroll .alicare-list .list-item {
+  width: auto;
+  padding: 0px;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow .box .button {
+  margin: 16px -8px 8px;
+  text-align: left;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.kefu.active .expand .box-shadow .box .button .button-item {
+  width: calc(50% - 32px);
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.mini {
+  position: initial !important;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.mini .expand .expand-item {
+  margin: 0px 4px;
+  width: 118px;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.mini .expand .expand-item img {
+  display: inline-block;
+  margin: 0px 18px;
+  width: 82px;
+  height: 82px;
+}
+.alicare.mobile .contact-box .footer-shadow .footer .alicare-list .list-item.mini.active {
+  position: relative;
+  top: 0px;
+}
+.alicare.mobile .contact-box .mi .addition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.alicare.mobile .contact-box .mi .addition img {
+  margin-top: 0px;
+}
+.alicare.mobile .trigger-tooltip {
+  top: 16px;
+}
+.alicare.pc .contact-box {
+  display: block;
+  width: 0px;
+  opacity: 0;
+  background-size: 500px;
+  transition: width 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.14s, opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) 0.24s;
+  animation: 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal none running mibox-close;
+}
+.alicare.pc .contact-box.active {
+  width: 500px;
+  opacity: 1;
+}
+.alicare.pc .contact-box.active .background {
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0.25s;
+}
+.alicare.pc .contact-box.active .box-shadow {
+  margin-top: 16px;
+  opacity: 1;
+  transition: margin-top 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.32s, opacity 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.32s;
+}
+.alicare.pc .contact-box.active .footer-shadow {
+  margin-top: 16px;
+  opacity: 1;
+  transition: margin-top 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s, opacity 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s;
+}
+.alicare.pc .contact-box.active.iframe-open, .alicare.pc .contact-box.active.addition-open {
+  width: 600px;
+}
+.alicare.pc .contact-box.active.iframe-open .controller, .alicare.pc .contact-box.active.addition-open .controller {
+  width: 600px;
+}
+.alicare.pc .contact-box.active.iframe-open .header, .alicare.pc .contact-box.active.addition-open .header {
+  width: 600px;
+}
+.alicare.pc .contact-box .mi {
+  display: none;
+  width: 600px;
+}
+.alicare.pc .contact-box.iframe-open-delay .mi {
+  display: block;
+}
+.alicare.pc .contact-box.iframe-open-delay .mi iframe {
+  display: block;
+}
+.alicare.pc .contact-box.iframe-open-delay .controller {
+  display: none;
+}
+.alicare.pc .contact-box.addition-open-delay .mi {
+  display: block;
+}
+.alicare.pc .contact-box.addition-open-delay .mi .addition {
+  display: block;
+}
+.alicare.pc .contact-box.addition-open-delay .controller {
+  display: none;
+}
+.alicare.pc .contact-box.iframe-open, .alicare.pc .contact-box.addition-open {
+  animation: 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s 1 normal none running mibox;
+}
+.alicare.pc .contact-box.iframe-open .controller, .alicare.pc .contact-box.addition-open .controller {
+  display: none;
+}
+.alicare.pc .contact-box.iframe-open.iframe-open-delay .controller, .alicare.pc .contact-box.addition-open.iframe-open-delay .controller, .alicare.pc .contact-box.iframe-open.addition-open-delay .controller, .alicare.pc .contact-box.addition-open.addition-open-delay .controller {
+  display: block;
+}
+.alicare.pc .contact-box .background {
+  min-width: 500px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+.alicare.pc .contact-box .controller {
+  min-width: 500px;
+  width: 100%;
+}
+.alicare.pc .contact-box .header {
+  min-width: 500px;
+  width: 100%;
+}
+.alicare.pc .contact-box .box-shadow {
+  width: calc(468px);
+  margin-top: 66px;
+  opacity: 0;
+  transition: margin-top 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0s, opacity 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+.alicare.pc .contact-box .footer-shadow {
+  width: calc(468px);
+  margin-top: 66px;
+  opacity: 0;
+  transition: margin-top 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0s, opacity 0.44s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+.alicare.pc .contact-box .footer {
+  overflow: hidden;
+}
+.alicare.pc .contact-box .footer .alicare-list {
+  position: relative;
+  top: 0px;
+  transition: top 0.3s ease-in-out 0s;
+}
+.alicare.pc .contact-box .footer .alicare-list .mini {
+  position: static !important;
+  transition: all 0.2s ease 0s;
+}
+.alicare.pc .contact-box .footer .alicare-list .mini .expand {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+.alicare.pc .contact-box .footer .alicare-list.mini-active {
+  top: -120px;
+}
+.alicare.pc .contact-box .footer .alicare-list.mini-active .mini .expand {
+  opacity: 1;
+  visibility: visible;
+}
+@keyframes mibox {
+  0%[object Object]{
+    width: 500px;
+    height: 610px;
+  }
+  49%[object Object]{
+    width: 0px;
+    height: 610px;
+  }
+  51%[object Object]{
+    width: 0px;
+    height: 650px;
+  }
+  100%[object Object]{
+    width: 600px;
+    height: 650px;
+  }
+}
+@keyframes mibox-close {
+  0%[object Object]{
+    width: 600px;
+    height: 650px;
+  }
+  49%[object Object]{
+    width: 0px;
+    height: 650px;
+  }
+  51%[object Object]{
+    width: 0px;
+    height: 610px;
+  }
+  100%[object Object]{
+    width: 500px;
+    height: 610px;
+  }
+}
