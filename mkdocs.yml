@@ -23,6 +23,7 @@ theme:
         icon: material/toggle-switch
         name: 切换到亮模式
   name: material
+  custom_dir: overrides
   language: zh # 中文，解决中文搜索问题
   features:
     - navigation.indexes
@@ -115,8 +116,8 @@ plugins:
     - rule/*
     - news_archive/*
     - encryption/*
-- tags:
-    tags_file: tags.md
+# - tags:
+#     tags_file: tags.md
 - callouts                # 微软风格的 admonition    https://github.com/sondregronas/mkdocs-callouts
 - abs-to-rel              # 绝对路径转相对路径       https://pypi.org/project/mkdocs-abs-rel-plugin/
 # - pdf-export            # 导出为 PDF 格式，不过对于此 Wiki 来说，耗时过多。
