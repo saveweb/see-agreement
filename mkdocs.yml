@@ -79,6 +79,16 @@ markdown_extensions:
 # - pymdownx.tilde        # 下标
 
 plugins:
+- i18n:
+    default_language: zh
+    # default_language_only: true
+    languages:
+      zh: 简体中文
+      zh_TC: 繁體中文
+      en: English
+    # material_alternate: false
+- search
+# - abs-to-rel              # 绝对路径转相对路径 https://pypi.org/project/mkdocs-abs-rel-plugin/
 # - progress                # 显示构建状态，方便除错？    https://github.com/obuya/mkdocs-new-features-notifier
 - mkdocs-video:           # 支持内嵌本地视频    https://pypi.org/project/mkdocs-video/
     is_video: True
