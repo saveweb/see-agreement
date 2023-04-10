@@ -8,5 +8,6 @@ mkdocs-material-extensions
 mkdocs-minify-plugin
 mkdocs-redirects
 mkdocs-roamlinks-plugin
+mkdocs-static-i18n
 mkdocs-video
 pymdown-extensions

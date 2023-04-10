@@ -11,4 +11,4 @@ url:
 
 > [!abstract] GitHub 的服务条款
 >
-> +   [GitHub Terms of Service](/未分类/GitHub/TOS.en.md)
+> +   [GitHub Terms of Service](GitHub_TOS.md)
