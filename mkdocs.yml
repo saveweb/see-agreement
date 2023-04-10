@@ -34,8 +34,10 @@ use_directory_urls: false   # gledos 不喜欢的 URL 风格，所以要关闭
 edit_uri: ""                # 隐藏编辑按钮
 
 markdown_extensions:
+# - legacy_em               # 恢复 Markdown 的严格加重符号语义
 - md_in_html                # HTML 内书写 Markdown
-- attr_list                 # https://squidfunk.github.io/mkdocs-material/reference/images/ # 增加css-html样式，例如按钮，比如图片定义大小，caption
+- attr_list                 # 增加 css-html 样式，例如按钮，比如图片定义大小，caption    https://python-markdown.github.io/extensions/attr_list/
+# - legacy_attrs            # 增加 css-html 样式，已废弃，不推荐使用    https://python-markdown.github.io/extensions/legacy_attrs/
 - admonition                # 突出显示一些东西，比如 !!!info|bug|tips之类
 - footnotes                 # 支持脚注[^1]
 - def_list                  # 支持有序、无序、任务列表
@@ -50,8 +52,8 @@ markdown_extensions:
 - codehilite:
     guess_lang: false
     linenums: false
-- pymdownx.betterem:
-    smart_enable: all
+# - pymdownx.betterem:
+#     smart_enable: all
 - pymdownx.tabbed:        # 标签页 https://squidfunk.github.io/mkdocs-material/reference/content-tabs/ # C++/python 代码例子切换
     alternate_style: true
 - meta                    # YAML 元数据
@@ -60,10 +62,16 @@ markdown_extensions:
 - pymdownx.highlight      # 代码块相关
 - pymdownx.inlinehilite   # 代码块相关
 - pymdownx.snippets
-- pymdownx.magiclink
+# - pymdownx.magiclink    # 魔法链接，自动把裸露的链接转化成 <a> 标签
 - pymdownx.mark
 - pymdownx.critic         # 支持 markdown 高亮==、删除、注解等高级样式
 - pymdownx.keys           # 支持 快捷键渲染
+- pymdownx.emoji:         # 支持图标 icons 和表情渲染，比如:smile:
+    # emoji_index: !!python/name:materialx.emoji.twemoji
+    # emoji_generator: !!python/name:materialx.emoji.to_svg
+    options:
+      custom_icons:
+        - overrides/.icons
 # pymdownx.b64            # 将图片编码为 base64
 # - abbr                  # 缩写词，因为没有多少 Markdown 使用这样的语法，所以不会使用。
 # - nl2br                 # newline-to-break markdown 非严格换行，我不喜欢的插件
@@ -73,8 +81,6 @@ markdown_extensions:
 #     relative_path: ''   # default ''
 #     absolute: false     # default: false
 #     tags: 'a script img link object embed'
-# - pymdownx.emoji:       # 支持图标icons和表情渲染，比如:smile:
-# emoji_generator: !!python/name:pymdownx.emoji.to_png
 # - pymdownx.caret        # 上标、下划线
 # - pymdownx.smartsymbols # 1st 2en 以及特殊符号
 # - pymdownx.tilde        # 下标
