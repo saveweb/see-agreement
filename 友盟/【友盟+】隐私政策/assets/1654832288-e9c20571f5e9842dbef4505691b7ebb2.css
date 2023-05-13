@@ -1,0 +1,357 @@
+.umeng-common-footer-wrap .clears::after, .umeng-common-footer-wrap .clears::before {
+  content: "";
+  display: table;
+}
+.umeng-common-footer-wrap .clears::after {
+  clear: both;
+}
+.umeng-common-footer-wrap input {
+  appearance: textfield;
+  user-select: text;
+  cursor: auto;
+  padding: 1px;
+  background: rgba(107, 121, 142, 0.2) none repeat scroll 0% 0%;
+  border: 1px solid rgb(107, 121, 142);
+  color: rgb(255, 255, 255);
+}
+.umeng-common-footer-wrap button, .umeng-common-footer-wrap input, .umeng-common-footer-wrap select, .umeng-common-footer-wrap textarea {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0px;
+  font: 11px system-ui;
+}
+.umeng-common-footer-wrap input::-webkit-input-placeholder {
+  color: rgb(107, 121, 142);
+  font-size: 12px;
+}
+.umeng-common-footer-wrap input:-moz-placeholder, .umeng-common-footer-wrap input::placeholder {
+  color: rgb(107, 121, 142);
+  font-size: 12px;
+}
+.umeng-common-footer-wrap {
+  background: rgb(21, 28, 41) none repeat scroll 0% 0%;
+  clear: both;
+  position: relative;
+}
+.umeng-common-footer-wrap * {
+  margin: 0px;
+  padding: 0px;
+  border: 0px none;
+  vertical-align: baseline;
+  text-align: left;
+}
+.umeng-common-footer-wrap li, .umeng-common-footer-wrap ol {
+  list-style: none;
+}
+.umeng-common-footer-wrap .page-width-box {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.umeng-common-footer-wrap .umeng-common-footer {
+  padding-top: 0px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div {
+  display: inline-block;
+  margin-right: 2.5%;
+  vertical-align: top;
+  margin-top: 64px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div h2 {
+  font-size: 14px;
+  color: rgb(151, 161, 175);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li {
+  line-height: 28px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li a {
+  color: rgb(107, 121, 142);
+  text-decoration: none;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li a:hover {
+  color: rgb(33, 150, 243);
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li b {
+  display: inline-block;
+  position: relative;
+  padding: 0px 2px;
+  margin: 0px 4px;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+  font-size: 12px;
+  font-family: Helvetica;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+  background: rgb(33, 150, 243) none repeat scroll 0% 0%;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li b::after, .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li b::before {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li b::before {
+  left: -4px;
+  border-right: 4px solid rgb(33, 150, 243);
+  border-left: 0px none;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li b::after {
+  right: -4px;
+  border-left: 4px solid rgb(33, 150, 243);
+  border-right: 0px none;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li i {
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  vertical-align: middle;
+  line-height: 22px;
+  margin-right: 4px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li.active-nav a {
+  color: rgb(33, 150, 243);
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-last {
+  margin-right: 25px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .partner-links {
+  margin-top: 24px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .partner-links a {
+  margin-right: 5px;
+  color: rgb(107, 121, 142);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-about {
+  position: relative;
+  color: rgb(107, 121, 142);
+  float: right;
+  padding-left: 40px;
+  border-left: 1px solid rgba(196, 201, 210, 0.2);
+  margin-right: 0px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-about li {
+  white-space: normal;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-about-col, .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-title {
+  display: inline-block;
+  width: 120px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-about-img img {
+  width: 90px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-info {
+  display: inline-block;
+  width: 259px;
+  margin-left: 10px;
+  vertical-align: top;
+  text-align: right;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-input {
+  font-size: 12px;
+  width: 130px;
+  height: 24px;
+  padding: 0px 10px;
+  line-height: 22px;
+  outline: currentcolor none medium;
+  vertical-align: top;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+  border: 1px solid rgb(107, 121, 142);
+  color: rgb(151, 161, 175);
+  display: inline-block;
+  line-height: 24px;
+  height: 23px;
+  margin-left: 5px;
+  overflow: hidden;
+  width: 48px;
+  text-align: center;
+  cursor: pointer;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-tip {
+  background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  width: 177px;
+  display: none;
+  right: 3px;
+  line-height: 18px;
+  padding: 5px 10px;
+  animation: 5s ease 0s 1 normal none running myfirst;
+  opacity: 0;
+  bottom: -30px;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 5px;
+  border-radius: 2px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-tip .error {
+  color: rgb(240, 65, 52);
+  width: 150px;
+  display: inline-block;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-tip .error-icon {
+  color: rgb(240, 65, 52);
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+  margin-right: 0px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-tip .sucess {
+  width: 150px;
+  display: inline-block;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .subscribe-tip .sucess-icon {
+  color: rgb(26, 164, 84);
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2px;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom {
+  margin-top: 64px;
+  font-size: 0px;
+  background: rgb(9, 14, 25) none repeat scroll 0% 0%;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-logo {
+  display: inline-block;
+  width: 10%;
+  color: rgb(121, 126, 131);
+  vertical-align: middle;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-logo i {
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-info {
+  display: inline-block;
+  width: 90%;
+  text-align: right;
+  font-size: 12px;
+  color: rgb(107, 121, 142);
+  vertical-align: middle;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-info a {
+  color: rgb(107, 121, 142);
+  text-decoration: none;
+}
+.umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-info a:hover {
+  color: rgb(107, 121, 142);
+}
+@keyframes myfirst {
+  0%[object Object]{
+    opacity: 0;
+    bottom: 0px;
+  }
+  10%[object Object]{
+    opacity: 1;
+    bottom: 40px;
+  }
+  50%[object Object]{
+    opacity: 1;
+    bottom: 40px;
+  }
+  100%[object Object]{
+    opacity: 0;
+    bottom: 40px;
+  }
+}
+@media (max-width: 1200px) {
+  .umeng-common-footer-wrap .umeng-common-footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top {
+    padding-left: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-about {
+    display: none;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .app-hidden {
+    display: none !important;
+  }
+}
+@media (max-width: 750px) {
+  .umeng-common-footer-wrap .page-width-box {
+    width: auto;
+    padding: 0px 16px;
+  }
+  .umeng-common-footer-wrap li {
+    list-style: none;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer {
+    width: auto;
+    padding-top: 24px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top {
+    padding: 0px 16px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div {
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 3% 24px 0px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div ul {
+    width: 90%;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div li {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top > div:nth-child(2) {
+    width: 100%;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .tab-last {
+    margin-right: 0px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-top .partner-links {
+    width: 100%;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom {
+    margin-top: 0px;
+    font-size: 0px;
+    padding: 10px 0px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-logo {
+    margin-top: -5px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-logo i {
+    font-size: 60px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-info {
+    line-height: 16px;
+    font-size: 10px;
+  }
+  .umeng-common-footer-wrap .umeng-common-footer .umeng-common-footer-bottom .umeng-common-footer-info span {
+    display: block;
+    text-align: right;
+  }
+}
